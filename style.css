@@ -1,0 +1,207 @@
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+       background-image: url('../image/weather.webp');
+       background-repeat: no-repeat;
+       background-size:cover;
+     
+    }
+    /* main body css */
+    #main{
+        /* border: 0px solid black; */
+        width:70%;
+        text-align: center;
+        margin: 210px auto;
+        padding: 20px;
+        box-shadow: 5px 5px 10px black;
+        border-radius: 5px;
+        
+    }
+    #temp{
+       /*  border: 2px solid blue;*/ 
+        text-align: left;
+        padding: 20px;
+        margin: 2px;
+        height: 150px;
+    }
+   .same{
+        /* border: 0px solid black; */
+       display: block;
+       text-align: center;
+       width: 96%;
+    height:35px;
+    text-align: center;
+    font-size: 15px;
+    margin: 5px 4px;
+    padding-top: 10px;
+    text-transform: capitalize;
+    box-shadow: 5px 5px 20px black;
+    border-radius: 5px;
+    font-family: 'Fondamento', cursive;
+    font-weight:bold;
+  
+
+        
+    }
+   
+    .same i{
+        font-size:22px;
+    }
+    .heading{
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 20px;
+        height: 47px;
+        font-family: 'Fondamento', cursive;
+        text-transform: capitalize;
+        box-sizing: none;
+    }
+    #countainer{
+        /* border: 2px solid green; */
+        height: 240px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:2px;
+        padding: 10px;
+        
+    }
+    .forcast{
+        /* border: 2px solid black; */
+        height: 210px;
+        width: 190px;
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
+        box-shadow: 5px 5px 20px black;
+        border-radius: 5px;
+       
+
+        
+    }
+    .input{
+        /* border: 2px solid red; */
+        margin: 2px;
+        padding: 10px;
+      
+    }
+    .search{
+        border: 2px solid black;
+        height: 36px;
+     padding: 4px;
+     border-radius: 20px;
+     font-weight: bold;
+     display: flex;
+     align-items: center;
+     
+    
+    }
+    .search input{
+        height:33px;
+    width: 80%;
+    border:none  ;
+    outline: none;
+    padding: 5px 10px;
+    /* border: 2px solid black; */
+     flex: 1;
+    background-color: transparent;
+    font-family:'Fondamento', cursive;
+    font-size: 18px;
+    color:black;
+    
+
+    
+
+    
+    }
+    ::placeholder{
+        text-transform: capitalize;
+        font-size: 20px;
+        color: black;
+        padding:15px 0px;
+        font-size: 18px;
+    }
+      
+    .search i{
+        font-size: 18px;
+        margin: 7px;
+    }
+    .search button{
+    width:22%;
+    height: 32px;
+    background-color:transparent;
+    outline: none;
+    border: none;
+    /* border: 1px solid black; */
+    border-top-right-radius:8px;
+    border-bottom-right-radius:8px;
+    text-transform: capitalize;
+    font-size: 17px;
+    font-family:'Fondamento', cursive;
+    border-left: 2px solid black;
+    }
+
+    @media only screen and (max-width:943px){
+        #main{
+         
+          border: 0px solid red; 
+         height: 100%;
+         width:90%;
+        }
+        #countainer{
+            flex-wrap: wrap;
+            height: 100%;
+            
+        }
+        .same{
+           border: 0px solid green; 
+           width:100%;
+           box-shadow:2px 2px 10px white;
+            
+        }
+        #temp{
+            height: 50%;
+            border:0px solid red ;
+            width:100%;
+            box-shadow:5px 5px 20px black;
+        }
+        #countainer{
+        				border:0px Solid blue;
+        }
+        .forcast{
+        				border:0px Solid black;
+        				width:100%;
+        				
+        }
+        .t{
+        				border:none;
+        				box-shadow:none;
+        }
+        .input{
+        				border:0px solid red ;
+        				border-radius:5px;
+        }
+        .search{
+            width:100%
+        }
+        .search input{
+        				color:black;
+        				font-size:15px;
+        }
+        ::placeholder{
+        				font-size:15px;
+        }
+       .search button{
+        				border-left:2px solid black;
+        				font-size:15px;
+        				width:30%;
+        }
+         .search i{
+        font-size: 15px;
+        margin: 7px;
+    }
+
+    }
